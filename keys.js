@@ -1,8 +1,8 @@
-console.log('this is loaded');
 
-exports.twitterKeys = {
-  consumer_key: '<1SKiccGLvanEphK5QWGOWImGZ>',
-  consumer_secret: '<06ACKgtqK7QNvKFuoODNq999FhoIwVU40TVvhi9iKO3Kv6tJTg>',
-  access_token_key: '<915389366716866561-rirmo69KRT0dOhrHaXinpJpuSRpsu7H>',
-  access_token_secret: '<TbNYxKYFD20syC7sO3xpbQ1IeTDJv50aUoWrC9sn1NE9L>',
+module.exports.twitterKeys = {
+  consumer_key: 'DzfHpqR6WuwPHDyjjUYlOMd4x',
+  consumer_secret: 'WeZ7o0NxxcCVT67TNpgiQqkTTO8FPsresekx4SfpoXSyrBSDtr',
+  access_token: '915389366716866561-CCeOGMKoH0OZqszCZc0mo8FN93qCsCh',
+  access_token_secret: 'Wgr1dnbDiw2Nb4lfDaYFW8a2rzWJMTLNDi3Y2wwZMgYAu'
 }
+
