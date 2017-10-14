@@ -1,6 +1,7 @@
 console.log("liri is starting");
 var twitter = require('./twitterCall');
-var spotify = require('./spotifyCall')
+var spotify = require('./spotifyCall');
+var imdb = require('./IMDBcall');
 //------------------------------------------------
 	//grab data from keys.js 
 
@@ -17,9 +18,18 @@ if (liriFunc === 'my-tweets') {
 	twitter();
 
 } else if (liriFunc === 'spotify-this-song') {
-	spotify(process.argv[3]);
-
+	if (process.argv[3] == null){
+		spotify("The Sign Ace of Base");
+	} else {
+		spotify(process.argv[3]);
+	};
+	
 }  else if (liriFunc === 'movie-this') {
+	if (process.argv[3] == null){
+		imdb("Mr.Nobody");
+	} else {
+		imdb(process.argv[3]);
+	};
 
 }  else if (liriFunc === 'do-what-it-says') {	
 

@@ -10,3 +10,7 @@ exports.spotifyKeys = {
   id: 'aa26e1cece0344f7bda8bbbbc0147b3b',
   secret: 'eb1f2944dd5948a6900a32e30ab880c0'
 }
+
+exports.IMDBkeys = {
+	apiKey: '40e9cece'
+}
