@@ -8,3 +8,10 @@ undefined, undefined
 Look up a movie, undefined
 undefined, undefined
 Read my tweets, undefined
+Read my tweets, undefined
+Spotify a song, undefined
+undefined, undefined
+movie-this, scarface
+movie-this, scarface
+spotify-this-song, halloween
+spotify-this-song, halloween

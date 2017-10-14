@@ -14,21 +14,21 @@ var inquirer = require('inquirer');
 	 // more flexibility on user entries - take multiple word song requests
 	 // better feedback on invalid entry 
 
-inquirer.prompt([
-	 {
-	    name: "name",
-	    message: "What can I do for you?",
-	    type: 'list',
-	    choices: ['Read my tweets', 'Spotify a song', 'Look up a movie', 'Other'],
+// inquirer.prompt([
+// 	 {
+// 	    name: "name",
+// 	    message: "What can I do for you?",
+// 	    type: 'list',
+// 	    choices: ['Read my tweets', 'Spotify a song', 'Look up a movie', 'Other'],
 
-	  }]).then(function(answers) {
-		console.log(answers);
+// 	  }]).then(function(answers) {
+// 		console.log(answers);
 
 
 
-		    liriFunc = answers.name;
-		    liriFunctions();
-		});
+// 		    liriFunc = answers.name;
+// 		    liriFunctions();
+// 		});
 
 var liriFunc = process.argv[2];
 var param = process.argv[3];
@@ -37,24 +37,24 @@ function liriFunctions() {
 	// log user input
 	fs.appendFile("log.txt", liriFunc + ', ' + param + "\n");
 
-		if (liriFunc === 'my-tweets' || 'Read my tweets') { 
+		if (liriFunc === 'my-tweets') { 
 			twitter();
 
-		} else if (liriFunc === 'spotify-this-song' || 'Spotify a song') {
+		} else if (liriFunc === 'spotify-this-song') {
 			if (param == null){
 				spotify("The Sign Ace of Base");
 			} else {
 				spotify(param);
 			};
 			
-		}  else if (liriFunc === 'movie-this' || 'Look up a movie') {
+		}  else if (liriFunc === 'movie-this') {
 			if (param == null){
 				imdb("Mr.Nobody");
 			} else {
 				imdb(param);
 			};
 
-		}  else if (liriFunc === 'do-what-it-says' || 'Other') {
+		}  else if (liriFunc === 'do-what-it-says') {
 			fs.readFile("random.txt", "utf8" , function (err, data) {
 		    var array = data.toString().split(',');
 		   //  console.log(array);
