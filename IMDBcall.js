@@ -1,15 +1,7 @@
 var imdb = require('imdb-api');
 var keys = require('./keys').IMDBkeys;
 
-
-// var IMDBsearch = function(title) {
-// 	this.title = title;
-// 	this.getMovie = function() {
-// 		imdb.search({title: this.title}, keys).then(console.log).catch(console.log);
-// 	};
-
-// };
-
+//IMDBSearch constructor
 var IMDBsearch = function(title) {
 	this.title = title;
 	this.getMovie = function() {
@@ -28,10 +20,12 @@ var IMDBsearch = function(title) {
 	}
 };
 
+//grab IMDBSearch object from constructor and call getMovie method
 newIMDBSearch = function(title) {
 	var newIMDBSearch = new IMDBsearch(title);
 	newIMDBSearch.getMovie();
 }
 
+//export function object 
 module.exports = newIMDBSearch;
 
