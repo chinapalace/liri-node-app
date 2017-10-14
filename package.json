@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/chinapalace/liri-node-app/issues"
   },
-  "homepage": "https://github.com/chinapalace/liri-node-app#readme"
+  "homepage": "https://github.com/chinapalace/liri-node-app#readme",
+  "dependencies": {
+    "node-spotify-api": "^1.0.7"
+  }
 }

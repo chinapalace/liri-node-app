@@ -1,8 +1,8 @@
-
 var Twit = require('twit');
 var keys = require('./keys').twitterKeys;
 
 var T = new Twit(keys);
+
 // console.log(T);
 
 module.exports = function() {

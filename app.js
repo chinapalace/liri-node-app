@@ -1,8 +1,3 @@
-function Greetr() {
-	this.greeting = 'hello world!';
-	this.greet = function() {
-		console.log(this.greeting);
-	}
-}
-
-module.exports = new Greetr();
+var SpotifySearch = require('./spotifyCall');
+var spotifySearch = new SpotifySearch(song);
+spotifySearch.getSong("when the levee breaks");
