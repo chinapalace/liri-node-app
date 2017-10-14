@@ -8,7 +8,7 @@ var T = new Twit(keys);
 module.exports = function() {
 
 	T.get('search/tweets', {q: 'chinapalace3', count: 20 }, function(error, tweets, response) {
-	   console.log(tweets.statuses[0].text);
+	   console.log(tweets.statuses[0]);
 	   userTweets = tweets.statuses[0].text;
 	});
 
